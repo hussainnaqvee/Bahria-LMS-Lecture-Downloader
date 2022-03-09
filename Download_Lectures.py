@@ -8,10 +8,10 @@ import urllib
 import requests
 import os
 import shutil
-credential=["01-134181-025","hadialihania@97"]
-#example username="01-134181-025",password="bahria"
+credential=["username/enrollment","password"]
+#example username="01-134181-0xx",password="bahria"
 
-directory_path=["C:\\Users\\Hussa\Desktop\\chromedriver_win32\\chromedriver.exe","C:\\Users\\Hussa\Desktop\\8th Semester\\Lecture_Slides"]
+directory_path=["Chrome Webdriver Path Here","Path to Download your lectures"]
 #example path to download all lectrues="C:\\Users\\Hussa\Desktop\\7th Semester\\Lecture_Slides"
 #example path to chrome webdrivers= "C:\\Users\\Hussa\Desktop\\chromedriver_win32\\chromedriver.exe"
 def initiate(credential,directory_path):
