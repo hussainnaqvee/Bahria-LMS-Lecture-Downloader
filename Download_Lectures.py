@@ -8,12 +8,7 @@ import urllib
 import requests
 import os
 import shutil
-credential=["username/enrollment","password"]
-#example username="01-134181-0xx",password="bahria"
 
-directory_path=["Chrome Webdriver Path Here","Path to Download your lectures"]
-#example path to download all lectrues="C:\\Users\\Hussa\Desktop\\7th Semester\\Lecture_Slides"
-#example path to chrome webdrivers= "C:\\Users\\Hussa\Desktop\\chromedriver_win32\\chromedriver.exe"
 def initiate(credential,directory_path):
     #Path variable is to locate Chrome Webdrivers
     path=directory_path[0] #example===> "C:\\Users\\Hussa\Desktop\\chromedriver_win32\\chromedriver.exe"
@@ -90,4 +85,14 @@ def initiate(credential,directory_path):
                 #print(link)
 
 
-initiate(credential,directory_path)
+def main():
+    credential=["username/enrollment","password"]
+    #example username="01-134181-0xx",password="bahria"
+    directory_path=["Chrome Webdriver Path Here","Path to Download your lectures"]
+    #example path to download all lectrues="C:\\Users\\Hussa\Desktop\\7th Semester\\Lecture_Slides"
+    #example path to chrome webdrivers= "C:\\Users\\Hussa\Desktop\\chromedriver_win32\\chromedriver.exe"
+    initiate(credential,directory_path)
+    
+if __name__ == '__main__':
+    main()
+
